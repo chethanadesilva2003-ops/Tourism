@@ -1,0 +1,72 @@
+<main>
+    <link rel="stylesheet" href="css/style.css">
+    <h2 style="text-align:center; margin-bottom:20px; color:#2c3e50;">Hotel Booking</h2>
+    <p style="text-align:center; margin-bottom:30px; font-size:1.1em; color:#34495e;">
+        Please fill out the form below to reserve your stay at our hotels.
+    </p>
+
+    <form action="#" method="post" 
+          style="
+            max-width:600px; 
+            margin:0 auto; 
+            padding:30px; 
+            border-radius:15px; 
+            box-shadow:0 8px 20px rgba(0,0,0,0.3); 
+            background: url('images/form-background.jpg') no-repeat center center; 
+            background-size: cover; 
+            position: relative;
+          ">
+        
+        <div style="
+            position:absolute;
+            top:0; left:0; right:0; bottom:0;
+            background-color: rgba(255,255,255,0.85);
+            border-radius:15px;
+            z-index:0;
+        "></div>
+
+        <div style="position: relative; z-index:1;">
+            <label for="name" style="margin-top:15px; display:block; font-weight:600;">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required 
+                   style="width:100%; padding:12px; margin-top:5px; border-radius:8px; border:1px solid #ccc;">
+
+            <label for="email" style="margin-top:15px; display:block; font-weight:600;">Email:</label>
+            <input type="email" id="email" name="email" placeholder="example@domain.com" required 
+                   style="width:100%; padding:12px; margin-top:5px; border-radius:8px; border:1px solid #ccc;">
+
+            <label for="phone" style="margin-top:15px; display:block; font-weight:600;">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="+94XXXXXXXXX" pattern="[0-9+]{10,15}" required 
+                   style="width:100%; padding:12px; margin-top:5px; border-radius:8px; border:1px solid #ccc;">
+
+            <label for="guests" style="margin-top:15px; display:block; font-weight:600;">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" min="1" max="10" value="1" required 
+                   style="width:100%; padding:12px; margin-top:5px; border-radius:8px; border:1px solid #ccc;">
+
+            <label for="checkin" style="margin-top:15px; display:block; font-weight:600;">Check-in Date:</label>
+            <input type="date" id="checkin" name="checkin" required 
+                   style="width:100%; padding:12px; margin-top:5px; border-radius:8px; border:1px solid #ccc;">
+
+            <label for="checkout" style="margin-top:15px; display:block; font-weight:600;">Check-out Date:</label>
+            <input type="date" id="checkout" name="checkout" required 
+                   style="width:100%; padding:12px; margin-top:5px; border-radius:8px; border:1px solid #ccc;">
+
+            <label for="room" style="margin-top:15px; display:block; font-weight:600;">Room Type:</label>
+            <select id="room" name="room" required 
+                    style="width:100%; padding:12px; margin-top:5px; border-radius:8px; border:1px solid #ccc;">
+                <option value="">Select a room type</option>
+                <option value="single">Single</option>
+                <option value="double">Double</option>
+                <option value="suite">Suite</option>
+            </select>
+
+            <label for="requests" style="margin-top:15px; display:block; font-weight:600;">Special Requests:</label>
+            <textarea id="requests" name="requests" rows="4" placeholder="Any special requests?" 
+                      style="width:100%; padding:12px; margin-top:5px; border-radius:8px; border:1px solid #ccc;"></textarea>
+
+            <button type="submit" 
+                    style="margin-top:20px; width:100%; padding:15px; border:none; border-radius:10px; background-color:#2980b9; color:white; font-size:1.1em; font-weight:bold; cursor:pointer; transition:0.3s;">
+                Book Now
+            </button>
+        </div>
+    </form>
+</main>

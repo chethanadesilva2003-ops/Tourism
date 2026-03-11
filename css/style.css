@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('../images/background.png') no-repeat center center fixed;
+    background-size: 100%;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(178, 190, 181);
+}
+
+header .logo {
+    width: 100px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    background-color: rgba(255,255,255,0.8);
+    margin: 20px auto;
+    max-width: 1000px;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(255,255,255,0.8);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.heritage-list, .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.heritage-list a, .gallery img {
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.heritage-list img, .gallery img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+}
+
+form label {
+    display: block;
+    margin-top: 20px;
+}
+
+form input, form select, form textarea, form button {
+    width: 100%;
+    padding: 20px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
